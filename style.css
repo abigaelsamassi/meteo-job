@@ -3,30 +3,37 @@ body {
 	background-color: #0f7ec5;
 	background-repeat: repeat-y 1;
 	background-size:100vh;
+
 }
 
 header{
-	margin: 0 auto;
-	width:210px;
-	height: 20vh;
+	margin:0 auto;
+	width:250px;
+	height:90px
+	marging:bottom10px;
+	
 }
 section{
 	margin: 0 auto;
 	width: 613px;
 	background-color: white;
-	height: 615px;
-	padding-top: 5vh;
+	height: 630px;
 
 }
 input{
 	height: 30px;
+	padding-left: 10px;
+	font-size: .875rem;
+	margin-bottom: 15px;
 }
 
 form{
 	margin: 0 auto;
 	width: 550px;
-	height:614px;
-	
+	height:500px;
+	margin-top: 20px;
+	padding-top: 20px;
+	color:#13293c;
  }
  header p{
  	font-family: 'Poiret One', cursive;
@@ -34,17 +41,17 @@ form{
  	font-weight: bold;
 }
 a{
-	color: black;
+	color:#13293c;
 }
 
  
  .contenaire{
  	display: grid;
  	grid-template-columns:1fr 1fr;
- 	grid-template-rows:1fr 1fr;
- 	grid-column-gap: 10px;
-
- }
+ 	grid-template-rows:50px 50:;
+ 	grid-column-gap:10px;
+ 	grid-row-gap: -50px;
+}
  .item2{
  	grid-row-start:2 ;
  	grid-row-end:3;
@@ -60,33 +67,27 @@ a{
  	display: grid;
  	grid-template-columns: 1fr;
  	grid-template-rows:repeat(8,50px;)
+ }
+ 	
+ .item7{
+ 	width: 537px;
+
+ }
+ .pass{
+ 	width:100%;
+ 	height:30px ;	
+ 	background-image: url(oeuilS.png);
+ 	background-size:20px;
+ 	background-repeat: no-repeat;
+ 	background-position:96%;
+ 	border:1px solid #adaaaa;
+ }
  
-
-
- }
- .oeuil{
- 	border:1px solid #bbadad;
- 	height: 35px;
- 	
- }
- .passs{
- 	border:none;
- 	width:96%;
- 	height: 15px;
- 	padding-top: 15px;
- 	padding-bottom:5px;
- 	
- }
- .oeuil img{
- 	width: 15px;
- 	height: 15px;
- 	padding-top: 5px;
-
- }
  label{
  	font-weight: bold;
- 	margin-top: 15px;
+ 	margin-top:10px;
  	font-family: 'Open Sans', sans-serif;
+ 	color::#13293c;
  }
  .bouton{
  	display: grid;
@@ -98,20 +99,27 @@ a{
 
 .continuer{
 	background-color: #0f7ec5;
-	width:8em;
-	height: 3em;
+	width:7.5em;
+	height: 2.5em;
 	margin-left:200px;
 	margin-top: 10px;
 	color: white;
+	border:none;
+	font-size:20px;
 }
  button{
  	width:8em;
  	margin-bottom:10px;
  	border:none;
  	background-color:#eeeeee;
+ 	height:3.3em;
+ 	font-size: .8125rem;
+
  }
  button:hover{
- 	background-color: blue;
+ 	background-color:#0f7ec5;
+ 	color: white;
+ 	border:none;
  }
  div p{
  	font-weight: bold;
@@ -214,7 +222,7 @@ a{
 	opacity: 0;
 }
 .switch-input:checked ~ .switch-label {
-	background: rgb(209,206,197);
+	background:blue;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
 .switch-input:checked ~ .switch-label:before {
@@ -229,8 +237,8 @@ a{
 	left: 4px;
 	width:50px;
 	height: 28px;
-	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
-	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	background-color: blue;
+	background-image: -webkit-linear-gradient(top,#e2eaef 100%, #f0f0f0);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .switch-handle:before {
@@ -241,9 +249,14 @@ a{
 	margin: -6px 0 0 -6px;
 	width: 12px;
 	height: 12px;
-	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
-	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	background: linear-gradient(to bottom,#e2eaef,#e2eaef);
+	background-image: -webkit-linear-gradient(top,#e2eaef,#e2eaef);
 	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
 }
 .switch-input:checked ~ .switch-handle {
 	left: 74px;
+	background-color:#f0f4f7; 
+}
+ .switch-left-right{
+ 	border-color: grey;
+ }
