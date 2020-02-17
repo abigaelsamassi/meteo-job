@@ -32,13 +32,13 @@ form{
 	width: 550px;
 	height:500px;
 	margin-top: 20px;
-	padding-top: 20px;
+	padding-top:10px;
 	color:#13293c;
  }
  header p{
  	font-family: 'Poiret One', cursive;
  	color: white;
- 	font-weight: bold;
+ 	font-weight:bold;
 }
 a{
 	color:#13293c;
